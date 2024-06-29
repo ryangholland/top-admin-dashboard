@@ -67,12 +67,31 @@ h3 {
 
 h4 {
   font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+h5 {
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+hr {
+  margin-block: 1rem;
 }
 
 /* Utility */
 
 .flow > * + * {
   margin-top: 2rem;
+}
+
+.small-flow > * + * {
+  margin-top: 1rem;
 }
 
 .row {
@@ -87,7 +106,7 @@ main {
   height: 100vh;
   display: grid;
   grid-template-columns: 300px 1fr;
-  grid-template-rows: 175px 1fr; /* try to take this out when everyting else is in */
+  grid-template-rows: 175px 1fr;
 }
 
 .sidebar {
@@ -152,14 +171,14 @@ main {
   padding: 2rem;
 
   display: grid;
-  grid-template-columns: minmax(400px, 1fr) 400px;
+  grid-template-columns: minmax(400px, 1fr) 300px;
 }
 
 .projects-grid {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
   padding: 0 2rem 0 0;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
 }
 
 .project-card {
@@ -188,3 +207,17 @@ main {
   opacity: 0.8;
   cursor: pointer;
 }
+
+.announcements-container,
+.trending-container {
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  line-height: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+.announcements-container p {
+  font-size: 0.85rem;
+}
+
